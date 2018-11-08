@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A03B301921941B030044C5CF /* testWKWeb.html in Resources */ = {isa = PBXBuildFile; fileRef = A03B301821941B030044C5CF /* testWKWeb.html */; };
 		A073DA9A21914EA900C3DA04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A073DA9921914EA900C3DA04 /* AppDelegate.m */; };
 		A073DA9D21914EA900C3DA04 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A073DA9C21914EA900C3DA04 /* ViewController.m */; };
 		A073DAA021914EA900C3DA04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A073DA9E21914EA900C3DA04 /* Main.storyboard */; };
 		A073DAA221914EAB00C3DA04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A073DAA121914EAB00C3DA04 /* Assets.xcassets */; };
 		A073DAA521914EAB00C3DA04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A073DAA321914EAB00C3DA04 /* LaunchScreen.storyboard */; };
 		A073DAA821914EAB00C3DA04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A073DAA721914EAB00C3DA04 /* main.m */; };
-		A073DAB021914FC100C3DA04 /* HHServiceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A073DAAF21914FC100C3DA04 /* HHServiceSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A03B301821941B030044C5CF /* testWKWeb.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = testWKWeb.html; sourceTree = "<group>"; };
 		A073DA9521914EA900C3DA04 /* TestSdkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSdkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A073DA9821914EA900C3DA04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A073DA9921914EA900C3DA04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -27,7 +28,6 @@
 		A073DAA421914EAB00C3DA04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A073DAA621914EAB00C3DA04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A073DAA721914EAB00C3DA04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A073DAAF21914FC100C3DA04 /* HHServiceSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HHServiceSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +35,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A073DAB021914FC100C3DA04 /* HHServiceSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +61,7 @@
 		A073DA9721914EA900C3DA04 /* TestSdkDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A03B301821941B030044C5CF /* testWKWeb.html */,
 				A073DA9821914EA900C3DA04 /* AppDelegate.h */,
 				A073DA9921914EA900C3DA04 /* AppDelegate.m */,
 				A073DA9B21914EA900C3DA04 /* ViewController.h */,
@@ -78,7 +78,6 @@
 		A073DAAE21914FC100C3DA04 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A073DAAF21914FC100C3DA04 /* HHServiceSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -141,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A073DAA521914EAB00C3DA04 /* LaunchScreen.storyboard in Resources */,
+				A03B301921941B030044C5CF /* testWKWeb.html in Resources */,
 				A073DAA221914EAB00C3DA04 /* Assets.xcassets in Resources */,
 				A073DAA021914EA900C3DA04 /* Main.storyboard in Resources */,
 			);

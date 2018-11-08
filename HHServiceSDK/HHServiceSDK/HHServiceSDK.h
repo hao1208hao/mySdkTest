@@ -21,3 +21,9 @@ FOUNDATION_EXPORT const unsigned char HHServiceSDKVersionString[];
 #import <HHServiceSDK/HHAlert.h>
 #import <HHServiceSDK/QRTool.h>
 #import <HHServiceSDK/HHValidLocalAuthManager.h>
+#import <HHServiceSDK/HHUseInfo.h>
+#import <HHServiceSDK/HHMacros.h>
+#import <HHServiceSDK/HHSingleton.h>
+#import <HHServiceSDK/TakeInSecretVC.h>
+#import <HHServiceSDK/HHImageCode.h>
+#import <HHServiceSDK/WKWebViewVC.h>

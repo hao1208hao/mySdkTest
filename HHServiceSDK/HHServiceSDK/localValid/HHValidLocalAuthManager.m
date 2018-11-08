@@ -9,6 +9,7 @@
 #import "HHValidLocalAuthManager.h"
 #import <LocalAuthentication/LocalAuthentication.h>
 
+
 @interface HHValidLocalAuthManager()
 
 /** 回调代码块 */
@@ -20,6 +21,7 @@
 
 @implementation HHValidLocalAuthManager
 
+ 
 //初始化
 +(instancetype)shareInstance{
     
@@ -31,6 +33,7 @@
     });
     return instance;
 }
+
 
 //懒加载
 - (LAContext *)context {

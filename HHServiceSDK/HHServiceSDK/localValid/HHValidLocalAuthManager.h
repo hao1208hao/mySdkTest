@@ -8,11 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+
 typedef void(^getAuthResultBlock)(BOOL result,NSError* error    );
 
 @interface HHValidLocalAuthManager : NSObject
 
-+(instancetype)shareInstance;
+ +(instancetype)shareInstance;
 
 -(void)getAuthResult:(getAuthResultBlock)block;
 

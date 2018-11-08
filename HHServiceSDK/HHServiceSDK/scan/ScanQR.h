@@ -22,7 +22,7 @@ typedef void(^scanResultBlock)(NSString* result);
 /** 扫描结果代理 */
 @property(nonatomic,weak) id<scanResultDelegate> scanDelegate;
 
-@property(nonatomic,assign) scanResultBlock block;
+@property(nonatomic,copy) scanResultBlock block;
 
 /**
  *  扫描二维码
