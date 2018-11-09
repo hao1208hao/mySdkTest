@@ -11,6 +11,10 @@
 #import <HHServiceSDK/HHLocationManager.h>
 #import <WebKit/WKWebView.h>
 #import <HHServiceSDK/WKWebViewVC.h>
+#import <HHServiceSDK/HHToast.h>
+#import <HHServiceSDK/UIView+HHCorner.h>
+
+//#import "UIView+HHCorner.h"
 
 @interface ViewController ()
 
@@ -66,6 +70,7 @@
         //NSString* locaion = HHGetLocation;
         //HHCommonAlert(locaion);
         
+        [HHToast showTextToast:@"这是真的么，我就想试试这是不是真的"];
     }else if(tag == 1){
         
         NSArray* qrArr = @[@"能不能借我 5k 块钱?",@"能不能借我 1w 块钱?",@"能不能借我 1.5w 块钱?",@"能不能借我 2w 块钱?",@"能不能借我 2.5w 块钱?",@"能不能借我 3w 块钱?",@"能不能借我 3.5w 块钱?",@"能不能借我 4w 块钱?",];
@@ -124,7 +129,14 @@
         
     }else if(tag == 4){
         /** 测试Gzip 压缩 */
-        HHCommonAlert(terminalInfo);
+        
+        UIView* view = [[UIView alloc]init];
+        [view setFrame:CGRectMake(100, 300, 200, 200)];
+        [view setBackgroundColor:[UIColor redColor]];
+        [self.view addSubview:view];
+        
+        view.cornerRadii = 17;
+        view.cornerDirect = UIRectCornerAllCorners;
     }else if(tag == 5){
         HHCommonAlert(deviceID);
         

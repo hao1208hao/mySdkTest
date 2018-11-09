@@ -21,6 +21,10 @@
 		A03B301021940FDE0044C5CF /* WKWebViewVC.h in Headers */ = {isa = PBXBuildFile; fileRef = A03B300C21940FDE0044C5CF /* WKWebViewVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A03B3014219410760044C5CF /* HHImageCode.h in Headers */ = {isa = PBXBuildFile; fileRef = A03B3012219410760044C5CF /* HHImageCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A03B3015219410760044C5CF /* HHImageCode.m in Sources */ = {isa = PBXBuildFile; fileRef = A03B3013219410760044C5CF /* HHImageCode.m */; };
+		A03B304E219560F70044C5CF /* HHToast.h in Headers */ = {isa = PBXBuildFile; fileRef = A03B304C219560F70044C5CF /* HHToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A03B304F219560F70044C5CF /* HHToast.m in Sources */ = {isa = PBXBuildFile; fileRef = A03B304D219560F70044C5CF /* HHToast.m */; };
+		A03B305F21957CE30044C5CF /* UIView+HHCorner.h in Headers */ = {isa = PBXBuildFile; fileRef = A03B305D21957CE30044C5CF /* UIView+HHCorner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A03B306021957CE30044C5CF /* UIView+HHCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = A03B305E21957CE30044C5CF /* UIView+HHCorner.m */; };
 		A073DA1F21914CB200C3DA04 /* HHServiceSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = A073DA1D21914CB200C3DA04 /* HHServiceSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A073DA7F21914E1600C3DA04 /* QRView.m in Sources */ = {isa = PBXBuildFile; fileRef = A073DA7721914E1600C3DA04 /* QRView.m */; };
 		A073DA8021914E1600C3DA04 /* qr_scan_line_jd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A073DA7821914E1600C3DA04 /* qr_scan_line_jd@2x.png */; };
@@ -51,6 +55,10 @@
 		A03B300C21940FDE0044C5CF /* WKWebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewVC.h; sourceTree = "<group>"; };
 		A03B3012219410760044C5CF /* HHImageCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHImageCode.h; sourceTree = "<group>"; };
 		A03B3013219410760044C5CF /* HHImageCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHImageCode.m; sourceTree = "<group>"; };
+		A03B304C219560F70044C5CF /* HHToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHToast.h; sourceTree = "<group>"; };
+		A03B304D219560F70044C5CF /* HHToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHToast.m; sourceTree = "<group>"; };
+		A03B305D21957CE30044C5CF /* UIView+HHCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HHCorner.h"; sourceTree = "<group>"; };
+		A03B305E21957CE30044C5CF /* UIView+HHCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HHCorner.m"; sourceTree = "<group>"; };
 		A073DA1A21914CB200C3DA04 /* HHServiceSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HHServiceSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A073DA1D21914CB200C3DA04 /* HHServiceSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHServiceSDK.h; sourceTree = "<group>"; };
 		A073DA1E21914CB200C3DA04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -135,6 +143,32 @@
 			path = imageCode;
 			sourceTree = "<group>";
 		};
+		A03B304B219560EA0044C5CF /* toast */ = {
+			isa = PBXGroup;
+			children = (
+				A03B304C219560F70044C5CF /* HHToast.h */,
+				A03B304D219560F70044C5CF /* HHToast.m */,
+			);
+			path = toast;
+			sourceTree = "<group>";
+		};
+		A03B305221956D5C0044C5CF /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A03B305321956D5C0044C5CF /* UIView */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		A03B305321956D5C0044C5CF /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				A03B305D21957CE30044C5CF /* UIView+HHCorner.h */,
+				A03B305E21957CE30044C5CF /* UIView+HHCorner.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 		A073DA1021914CB200C3DA04 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +188,8 @@
 		A073DA1C21914CB200C3DA04 /* HHServiceSDK */ = {
 			isa = PBXGroup;
 			children = (
+				A03B305221956D5C0044C5CF /* extensions */,
+				A03B304B219560EA0044C5CF /* toast */,
 				A03B300721940FDE0044C5CF /* baseView */,
 				A03B3002219407F20044C5CF /* camera */,
 				A03B2FF42193F36E0044C5CF /* location */,
@@ -209,6 +245,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A03B305F21957CE30044C5CF /* UIView+HHCorner.h in Headers */,
+				A03B304E219560F70044C5CF /* HHToast.h in Headers */,
 				A03B301021940FDE0044C5CF /* WKWebViewVC.h in Headers */,
 				A03B3014219410760044C5CF /* HHImageCode.h in Headers */,
 				A03B3006219408880044C5CF /* TakeInSecretVC.h in Headers */,
@@ -298,11 +336,13 @@
 				A03B300D21940FDE0044C5CF /* WKDelegateController.m in Sources */,
 				A073DA8B21914E6200C3DA04 /* HHAlert.m in Sources */,
 				A073DA7F21914E1600C3DA04 /* QRView.m in Sources */,
+				A03B304F219560F70044C5CF /* HHToast.m in Sources */,
 				A073DA8121914E1600C3DA04 /* ScanQR.m in Sources */,
 				A03B3015219410760044C5CF /* HHImageCode.m in Sources */,
 				A03B2FF32193F05C0044C5CF /* HHUseInfo.m in Sources */,
 				A073DA8521914E1600C3DA04 /* QRTool.m in Sources */,
 				A03B2FF82193F3AE0044C5CF /* HHLocationManager.m in Sources */,
+				A03B306021957CE30044C5CF /* UIView+HHCorner.m in Sources */,
 				A03B3005219408880044C5CF /* TakeInSecretVC.m in Sources */,
 				A03B300E21940FDE0044C5CF /* WKWebViewVC.m in Sources */,
 				A073DAB4219150F000C3DA04 /* HHValidLocalAuthManager.m in Sources */,
